@@ -1,7 +1,7 @@
-<button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal<?php echo $i ?>">
+<button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal<?php echo $pendaftaran->id_pendaftaran ?>">
     <i class="fa fa-trash-o"></i>
 </button>
-<div class="modal fade" id="myModal<?php echo $i ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal<?php echo $pendaftaran->id_pendaftaran ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -18,7 +18,6 @@
 
                 <a href="<?php echo base_url('admin/pendaftar/delete/' . $pendaftaran->id_pendaftaran) ?>" class="btn btn-danger">
                     <i class="fa fa-trash-o"></i> Ya, Hapus data</a>
-
             </div>
         </div>
     </div>

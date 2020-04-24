@@ -61,7 +61,7 @@ echo form_open(base_url('admin/pendaftar/proses'));
                         <div class="btn-group">
                             <a href="<?php echo base_url('admin/pendaftar/edit/' . $pendaftaran->id_pendaftaran) ?>" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> Edit</a>
                             <a href="<?php echo base_url('admin/pendaftar/delete/' . $pendaftaran->id_pendaftaran) ?>" class="btn btn-danger btn-sm" onclick="confirmation(event)"><i class="fa fa-trash-o"></i> Hapus</a>
-                             <a href="<?php echo base_url('admin/pendaftar/cetak/' . $pendaftaran->id_pendaftaran) ?>" class="btn btn-danger btn-sm" onclick=""><i class="fa fa-print"></i> Cetak</a>
+                            <a href="<?php echo base_url('admin/pendaftar/cetak/' . $pendaftaran->id_pendaftaran) ?>" class="btn btn-danger btn-sm" onclick=""><i class="fa fa-print"></i> Cetak</a>
                         </div>
                     </td>
                 </tr>

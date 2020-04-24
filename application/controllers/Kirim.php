@@ -26,34 +26,14 @@ class Kirim extends CI_Controller {
 		$config['validation']   = FALSE;
 		$this->email->initialize($config);
 		$this->email->from($site->email,$site->namaweb);
-		$this->email->to('javawebmedia@gmail.com'); 
+		$this->email->to('tegarsatyanegara.if@gmail.com'); 
 		$this->email->subject('Contoh Pesan');
 		$this->email->message('Contoh Pesan');  
 		$this->email->send();
 		
 		echo $this->email->print_debugger();
 	}
-
-	// Coba
-	public function coba()
-	{
-		$this->load->library('email');
-		
-		$this->email->from('contact@nuansaabadi.co.id', 'Name');
-		$this->email->to('javawebmedia@email.com');
-		
-		$this->email->subject('subject');
-		$this->email->message('message');
-		
-		$coba = $this->email->send();
-		if(!$coba) {
-			echo 'Error';
-		}else{
-			echo 'OK';
-		}
-		
-		echo $this->email->print_debugger();
-	}
+	
 }
 
 /* End of file Kirim.php */
