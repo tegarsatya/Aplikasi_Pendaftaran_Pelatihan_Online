@@ -22,7 +22,6 @@ class Kontak extends CI_Controller
             'kontak'             =>    $kontak,
             'isi'                =>    'admin/kontak/list'
 
-
         );
         $this->load->view('admin/layout/wrapper', $data, FALSE);
     }
