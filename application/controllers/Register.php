@@ -27,7 +27,7 @@ class Register extends CI_Controller
 ?>
             <script type="text/javascript">
                 alert('Terima Kasih telah melakukan register ! Lakukan Login dengan username dan password yang telah di inputkan lalu melakukan pendaftaran');
-                window.location = '<?php echo base_url('register'); ?>'
+                window.location = '<?php echo base_url('login'); ?>'
             </script>
         <?php
         } else {

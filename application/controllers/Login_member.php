@@ -33,7 +33,7 @@ class Login_member extends CI_Controller
 			$username 	= strip_tags($this->input->post('username'));
 			$password 	= strip_tags($this->input->post('password'));
 			// Proses ke simple login
-			$this->simple_login->login($username, $password);
+			$this->simple_login_user->login($username, $password);
 		}
 		// End validasi
 
@@ -45,7 +45,7 @@ class Login_member extends CI_Controller
 	public function logout()
 	{
 		// Panggil library logout
-		$this->simple_login->logout();
+		$this->simple_login_user->logout();
 	}
 }
 
